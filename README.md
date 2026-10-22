@@ -6,8 +6,6 @@ Paper accepted
 
 Based on the original idea shown in Kin Long Kelvin Lee et al 2021 ApJL 917 L6 (DOI: 10.3847/2041-8213/ac194b) 
 
-Seguir rellenando
-
 ## Requirements
 
 To be filled
