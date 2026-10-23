@@ -59,8 +59,6 @@ conda activate keras3-env
 
 ```
 
-> **Note:** `environment.yml` contains a `prefix:` line pointing to the authors' machine. If conda complains, delete that line and run the command again.
-
 ## 3. Repository layout
 
 ```
