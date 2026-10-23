@@ -1,8 +1,7 @@
 PYTHON = python #/home/german/miniconda3/envs/rdkit/bin/python
 
 MODEL_DIR = model
-MODEL_OUT = model
-INFERENCE_DIR = inference
+MODEL_OUT = output
 
 SMILES_SRC = ./datasets/tmc-1.smiles #tmc-1_withUL.smiles
 DENSITIES_SRC = ./datasets/tmc-1.columndensity #tmc-1_withUL.columndensity
@@ -12,17 +11,15 @@ TRAIN_READY = $(MODEL_OUT)/train-ready.dat
 FEATURES = $(MODEL_OUT)/features-chemberta.dat
 DESCRIPTORS = $(MODEL_OUT)/rdkit-descriptors.dat
 TRAINING_OUTDIR = $(MODEL_OUT)/training_outputs
-CHEMBERTA_MODEL_OR_PATH = /home/german/Projects_local/ISOCOSMOS/SP1/PrepareModelSubmission/astrochemberta/chemberta_dapt_out #DeepChem/ChemBERTa-100M-MLM #/home/german/Projects_local/ISOCOSMOS/SP1/PrepareModelSubmission/astrochemberta/chemberta_dapt_out
+CHEMBERTA_MODEL_OR_PATH = DeepChem/ChemBERTa-100M-MLM #/home/german/Projects_local/ISOCOSMOS/SP1/PrepareModelSubmission/astrochemberta/chemberta_dapt_out
 FEATURIZER_BATCH_SIZE = 16
 FEATURIZER_MAX_LENGTH = 128
-FEATURIZER_DEVICE = cuda
-FEATURIZER_LOCAL_FILES_ONLY = 1
+FEATURIZER_DEVICE = cpu
 TRAIN_TEST_SIZE = 0.2
 TRAIN_BATCH_SIZE = 32
 TRAIN_EPOCHS = 5000
 TRAIN_N_MODELS = 3 #3
 SEED = 1
-MODEL_DIRECTORY = $(TRAINING_OUTDIR) # model.keras #$(TRAINING_OUTDIR)
 FEATURIZER_OUTFILE_FLAG = $(if $(FEATURIZER_OUTFILE),--outfile $(FEATURIZER_OUTFILE),)
 SEED_FLAG = $(if $(SEED),--seed $(SEED),)
 
