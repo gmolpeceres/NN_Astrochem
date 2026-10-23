@@ -186,7 +186,6 @@ make all MODEL_OUT=my_source_run \
 
 Keep in mind that the model learns from the detections you give it: a source with few detections will give a less reliable model. (See section 4.2 of the article)
 
-```
 ## 7. Cleaning up
 
 ```bash
