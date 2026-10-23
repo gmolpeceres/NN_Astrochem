@@ -40,7 +40,7 @@ Everything runs from the **command line** through a `makefile`.
 
 ## 1. Requirements
 
-- Linux 
+- Linux (we did not test Mac or Windows)
 - [Miniconda / Anaconda](https://docs.conda.io/)
 - `make`
 
