@@ -116,7 +116,7 @@ Copies the input files into the output folder and merges SMILES and column densi
 | column density | *N* in cm⁻² |
 | `logn` | log₁₀ *N* (the value the model learns) |
 
-The default dataset is the TMC-1 inventory (detections up to 2021, pre-QUIJOTE and GOTHAM, and current).
+The default dataset is the TMC-1 inventory (detections up to 2021, pre-QUIJOTE and GOTHAM, and current (January 2026)).
 
 #### A.2 ChemBERTa embeddings — `make featurize`
 
